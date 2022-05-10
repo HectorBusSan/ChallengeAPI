@@ -11,6 +11,8 @@ describe('Test para VisualServices',()=>{
         expect(SVisual.length).toBe(29);
     });
     test('Requerimiento 3: Encontrar a los estudiantes con creditos por arriba de los 500',()=>{
-
+        const read= Reader.readingjson();
+        const SVisual= VisualServices.credits(read);
+        expect(SVisual.length).toBe(27);
     });
 });
